@@ -19,7 +19,7 @@ public class ListingsGetter
         try
         {
             var response = await Client.GetAsync(
-                "/bapi/apex/v1/public/apex/cms/article/list/query?type=1&pageNo=1&pageSize=10");
+                "/bapi/apex/v1/public/apex/cms/article/list/query?type=1&pageNo=1&pageSize=1&catalogId=48");
 
             response.EnsureSuccessStatusCode();
 
